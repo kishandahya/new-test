@@ -1,0 +1,71 @@
+Backup failed for Site series-erp.com. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 764, in backup
+    odb = scheduled_backup(
+          ^^^^^^^^^^^^^^^^^
+  File "apps/frappe/frappe/utils/backups.py", line 531, in scheduled_backup
+    return new_backup(
+           ^^^^^^^^^^^
+  File "apps/frappe/frappe/utils/backups.py", line 582, in new_backup
+    odb.get_backup(older_than, ignore_files, force=force)
+  File "apps/frappe/frappe/utils/backups.py", line 186, in get_backup
+    self.take_dump()
+  File "apps/frappe/frappe/utils/backups.py", line 377, in take_dump
+    frappe.throw(
+  File "apps/frappe/frappe/__init__.py", line 570, in throw
+    msgprint(
+  File "apps/frappe/frappe/__init__.py", line 542, in msgprint
+    _raise_exception()
+  File "apps/frappe/frappe/__init__.py", line 491, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.ExecutableNotFound: mysqldump not found in PATH! This is required to take a backup.
+
+Backup failed for Site series-erp.com. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 764, in backup
+    odb = scheduled_backup(
+          ^^^^^^^^^^^^^^^^^
+  File "apps/frappe/frappe/utils/backups.py", line 531, in scheduled_backup
+    return new_backup(
+           ^^^^^^^^^^^
+  File "apps/frappe/frappe/utils/backups.py", line 582, in new_backup
+    odb.get_backup(older_than, ignore_files, force=force)
+  File "apps/frappe/frappe/utils/backups.py", line 186, in get_backup
+    self.take_dump()
+  File "apps/frappe/frappe/utils/backups.py", line 377, in take_dump
+    frappe.throw(
+  File "apps/frappe/frappe/__init__.py", line 570, in throw
+    msgprint(
+  File "apps/frappe/frappe/__init__.py", line 542, in msgprint
+    _raise_exception()
+  File "apps/frappe/frappe/__init__.py", line 491, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.ExecutableNotFound: mysqldump not found in PATH! This is required to take a backup.
+
+Backup failed for Site series-erp.com. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 764, in backup
+    odb = scheduled_backup(
+          ^^^^^^^^^^^^^^^^^
+  File "apps/frappe/frappe/utils/backups.py", line 531, in scheduled_backup
+    return new_backup(
+           ^^^^^^^^^^^
+  File "apps/frappe/frappe/utils/backups.py", line 582, in new_backup
+    odb.get_backup(older_than, ignore_files, force=force)
+  File "apps/frappe/frappe/utils/backups.py", line 186, in get_backup
+    self.take_dump()
+  File "apps/frappe/frappe/utils/backups.py", line 377, in take_dump
+    frappe.throw(
+  File "apps/frappe/frappe/__init__.py", line 570, in throw
+    msgprint(
+  File "apps/frappe/frappe/__init__.py", line 542, in msgprint
+    _raise_exception()
+  File "apps/frappe/frappe/__init__.py", line 491, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.ExecutableNotFound: mysqldump not found in PATH! This is required to take a backup.
+
+WARN: Command not being executed in bench directory
+Usage: bench [OPTIONS] COMMAND [ARGS]...
+Try 'bench --help' for help.
+
+Error: No such option: --site

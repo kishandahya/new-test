@@ -1,0 +1,378 @@
+2023-10-03 23:11:54,293 DEBUG cd new-bench-name && python3 -m venv env
+2023-10-03 23:11:55,833 DEBUG cd new-bench-name && /Users/kishandahya/repos/new-bench-name/env/bin/python -m pip install --quiet --upgrade pip
+2023-10-03 23:11:56,483 DEBUG cd new-bench-name && /Users/kishandahya/repos/new-bench-name/env/bin/python -m pip install --quiet wheel
+2023-10-03 23:11:57,214 LOG Getting frappe
+2023-10-03 23:11:57,214 DEBUG cd new-bench-name/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2023-10-03 23:12:06,683 LOG Installing frappe
+2023-10-03 23:12:06,683 DEBUG cd /Users/kishandahya/repos/new-bench-name && /Users/kishandahya/repos/new-bench-name/env/bin/python -m pip install --quiet --upgrade -e /Users/kishandahya/repos/new-bench-name/apps/frappe 
+2023-10-03 23:12:48,799 DEBUG cd /Users/kishandahya/repos/new-bench-name/apps/frappe && yarn install
+2023-10-03 23:12:52,237 DEBUG cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe:
+2023-10-03 23:12:52,430 WARNING cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe: executed with exit code 7
+2023-10-03 23:12:52,430 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2023-10-03 23:12:52,430 DEBUG cd new-bench-name && bench build
+2023-10-03 23:12:52,529 INFO /usr/local/bin/bench build
+2023-10-03 23:13:00,923 LOG setting up backups
+2023-10-03 23:13:06,113 LOG backups were set up
+2023-10-03 23:13:06,114 INFO Bench new-bench-name initialized
+2023-10-03 23:14:50,354 INFO /usr/local/bin/bench new-site series-erp.com
+2023-10-03 23:16:46,427 INFO /usr/local/bin/bench --site series-erp.com install-app erpnext
+2023-10-03 23:17:37,157 INFO /usr/local/bin/bench get-app erpnext https://github.com/frappe/erpnext
+2023-10-03 23:17:37,170 LOG Getting erpnext
+2023-10-03 23:17:37,170 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext  --depth 1 --origin upstream
+2023-10-03 23:17:50,311 LOG Installing erpnext
+2023-10-03 23:17:50,367 DEBUG cd /Users/kishandahya/repos/new-bench-name && /Users/kishandahya/repos/new-bench-name/env/bin/python -m pip install --quiet --upgrade -e /Users/kishandahya/repos/new-bench-name/apps/erpnext 
+2023-10-03 23:17:55,195 DEBUG cd /Users/kishandahya/repos/new-bench-name/apps/erpnext && yarn install
+2023-10-03 23:17:55,386 DEBUG bench build --app erpnext
+2023-10-03 23:17:55,483 INFO /usr/local/bin/bench build --app erpnext
+2023-10-03 23:17:57,343 DEBUG cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe:
+2023-10-03 23:17:57,512 WARNING cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe: executed with exit code 7
+2023-10-03 23:17:57,512 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2023-10-03 23:18:05,733 INFO /usr/local/bin/bench --site series-erp.com install-app erpnext
+2023-10-03 23:20:51,018 INFO /usr/local/bin/bench start
+2023-10-03 23:20:51,426 INFO /usr/local/bin/bench watch
+2023-10-03 23:20:51,427 INFO /usr/local/bin/bench serve --port 8000
+2023-10-03 23:20:51,434 INFO /usr/local/bin/bench schedule
+2023-10-03 23:20:51,459 INFO /usr/local/bin/bench worker
+2023-10-03 23:24:09,174 INFO /usr/local/bin/bench use series-erp.com
+2023-10-03 23:24:13,653 INFO /usr/local/bin/bench start
+2023-10-03 23:24:14,045 INFO /usr/local/bin/bench serve --port 8000
+2023-10-03 23:24:14,045 INFO /usr/local/bin/bench schedule
+2023-10-03 23:24:14,049 INFO /usr/local/bin/bench watch
+2023-10-03 23:24:14,081 INFO /usr/local/bin/bench worker
+2023-10-03 23:29:10,580 INFO /usr/local/bin/bench --site series-erp.com set-admin-password password
+2023-10-03 23:29:25,723 INFO /usr/local/bin/bench --site series-erp.com console
+2023-10-03 23:32:29,917 INFO /usr/local/bin/bench start
+2023-10-03 23:32:30,322 INFO /usr/local/bin/bench schedule
+2023-10-03 23:32:30,323 INFO /usr/local/bin/bench watch
+2023-10-03 23:32:30,335 INFO /usr/local/bin/bench worker
+2023-10-03 23:32:30,338 INFO /usr/local/bin/bench serve --port 8000
+2023-10-03 23:39:38,093 INFO /usr/local/bin/bench drop-site series-erp.com --root-password password
+2023-10-03 23:40:47,200 INFO /usr/local/bin/bench new-site series-erp.com
+2023-10-03 23:42:21,604 INFO /usr/local/bin/bench start
+2023-10-03 23:42:45,288 INFO /usr/local/bin/bench start
+2023-10-03 23:42:45,674 INFO /usr/local/bin/bench watch
+2023-10-03 23:42:45,682 INFO /usr/local/bin/bench worker
+2023-10-03 23:42:45,682 INFO /usr/local/bin/bench serve --port 8000
+2023-10-03 23:42:45,692 INFO /usr/local/bin/bench schedule
+2023-10-03 23:51:53,986 INFO /usr/local/bin/bench --site series-erp.com execute frappe.desk.page.setup_wizard.setup_wizard.reset_setup
+2023-10-03 23:52:33,313 INFO /usr/local/bin/bench --site series-erp.com list-apps
+2023-10-03 23:53:29,376 INFO /usr/local/bin/bench get-app erpnext https://github.com/frappe/erpnext
+2023-10-03 23:53:34,216 INFO App moved from apps/erpnext to archived/apps/erpnext-2023-10-03
+2023-10-03 23:53:34,228 LOG Getting erpnext
+2023-10-03 23:53:34,229 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext  --depth 1 --origin upstream
+2023-10-03 23:53:49,215 LOG Installing erpnext
+2023-10-03 23:53:49,389 DEBUG cd /Users/kishandahya/repos/new-bench-name && /Users/kishandahya/repos/new-bench-name/env/bin/python -m pip install --quiet --upgrade -e /Users/kishandahya/repos/new-bench-name/apps/erpnext 
+2023-10-03 23:53:51,300 DEBUG cd /Users/kishandahya/repos/new-bench-name/apps/erpnext && yarn install
+2023-10-03 23:53:51,476 DEBUG bench build --app erpnext
+2023-10-03 23:53:51,583 INFO /usr/local/bin/bench build --app erpnext
+2023-10-03 23:53:53,438 DEBUG cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe:
+2023-10-03 23:53:53,613 WARNING cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe: executed with exit code 7
+2023-10-03 23:53:53,613 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2023-10-03 23:53:56,540 INFO /usr/local/bin/bench --site series-erp.com install-app erpnext
+2023-10-03 23:54:21,927 INFO /usr/local/bin/bench --site series-erp.com reinstall
+2023-10-03 23:56:09,611 INFO /usr/local/bin/bench start
+2023-10-03 23:56:10,034 INFO /usr/local/bin/bench watch
+2023-10-03 23:56:10,038 INFO /usr/local/bin/bench serve --port 8000
+2023-10-03 23:56:10,050 INFO /usr/local/bin/bench schedule
+2023-10-03 23:56:10,063 INFO /usr/local/bin/bench worker
+2023-10-04 00:00:01,387 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-04 00:00:28,882 INFO /usr/local/bin/bench --site series-erp.com mariadb
+2023-10-04 00:01:17,012 INFO /usr/local/bin/bench --site series-erp.com list-apps
+2023-10-04 00:01:51,367 INFO /usr/local/bin/bench get-app erpnext https://github.com/frappe/erpnext
+2023-10-04 00:02:02,785 INFO /usr/local/bin/bench use series-erp.com
+2023-10-04 00:04:56,364 INFO /usr/local/bin/bench --site series-erp.com list-apps
+2023-10-04 00:13:17,562 INFO /usr/local/bin/bench --site series-erp.com mariadb
+2023-10-04 00:13:44,153 INFO /usr/local/bin/bench update
+2023-10-04 00:14:04,522 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2023-10-04 00:14:16,043 DEBUG cd /Users/kishandahya/repos/new-bench-name/apps/frappe && git fetch upstream --unshallow
+2023-10-04 00:15:30,374 LOG pulling frappe
+2023-10-04 00:15:30,374 DEBUG cd /Users/kishandahya/repos/new-bench-name/apps/frappe && git pull  upstream develop
+2023-10-04 00:15:30,828 DEBUG cd /Users/kishandahya/repos/new-bench-name/apps/frappe && find . -name "*.pyc" -delete
+2023-10-04 00:15:31,077 DEBUG cd /Users/kishandahya/repos/new-bench-name/apps/erpnext && git fetch upstream --unshallow
+2023-10-04 00:20:48,606 LOG pulling erpnext
+2023-10-04 00:20:48,607 DEBUG cd /Users/kishandahya/repos/new-bench-name/apps/erpnext && git pull  upstream develop
+2023-10-04 00:20:49,001 DEBUG cd /Users/kishandahya/repos/new-bench-name/apps/erpnext && find . -name "*.pyc" -delete
+2023-10-04 00:20:49,042 DEBUG cd /Users/kishandahya/repos/new-bench-name && /Users/kishandahya/repos/new-bench-name/env/bin/python -m pip install --quiet --upgrade pip
+2023-10-04 00:20:50,015 LOG Installing frappe
+2023-10-04 00:20:50,015 DEBUG cd /Users/kishandahya/repos/new-bench-name && /Users/kishandahya/repos/new-bench-name/env/bin/python -m pip install --quiet --upgrade -e /Users/kishandahya/repos/new-bench-name/apps/frappe 
+2023-10-04 00:20:52,326 DEBUG cd /Users/kishandahya/repos/new-bench-name/apps/frappe && yarn install
+2023-10-04 00:20:52,551 LOG Installing erpnext
+2023-10-04 00:20:52,551 DEBUG cd /Users/kishandahya/repos/new-bench-name && /Users/kishandahya/repos/new-bench-name/env/bin/python -m pip install --quiet --upgrade -e /Users/kishandahya/repos/new-bench-name/apps/erpnext 
+2023-10-04 00:20:54,622 DEBUG cd /Users/kishandahya/repos/new-bench-name/apps/erpnext && yarn install
+2023-10-04 00:21:54,372 INFO /usr/local/bin/bench start
+2023-10-04 00:22:00,026 INFO /usr/local/bin/bench start
+2023-10-04 00:22:00,420 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 00:22:00,422 INFO /usr/local/bin/bench watch
+2023-10-04 00:22:00,426 INFO /usr/local/bin/bench schedule
+2023-10-04 00:22:00,445 INFO /usr/local/bin/bench worker
+2023-10-04 00:22:31,381 INFO /usr/local/bin/bench --site series-erp.com list-apps
+2023-10-04 00:22:43,610 INFO /usr/local/bin/bench get-app erpnext https://github.com/frappe/erpnext
+2023-10-04 00:23:22,409 INFO /usr/local/bin/bench get-app erpnext https://github.com/frappe/erpnext
+2023-10-04 00:23:25,587 LOG Installing erpnext
+2023-10-04 00:23:25,684 DEBUG cd /Users/kishandahya/repos/new-bench-name && /Users/kishandahya/repos/new-bench-name/env/bin/python -m pip install --quiet --upgrade -e /Users/kishandahya/repos/new-bench-name/apps/erpnext 
+2023-10-04 00:23:27,417 DEBUG cd /Users/kishandahya/repos/new-bench-name/apps/erpnext && yarn install
+2023-10-04 00:23:27,575 DEBUG bench build --app erpnext
+2023-10-04 00:23:27,674 INFO /usr/local/bin/bench build --app erpnext
+2023-10-04 00:23:29,428 DEBUG cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe:
+2023-10-04 00:23:29,607 WARNING cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe: executed with exit code 7
+2023-10-04 00:23:29,607 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2023-10-04 00:23:34,963 INFO /usr/local/bin/bench restart
+2023-10-04 00:23:35,148 DEBUG cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe:
+2023-10-04 00:23:35,321 WARNING cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe: executed with exit code 7
+2023-10-04 00:23:35,322 WARNING /usr/local/bin/bench restart executed with exit code 1
+2023-10-04 00:24:30,911 INFO /usr/local/bin/bench --site series-erp.com migrate
+2023-10-04 00:24:40,519 INFO /usr/local/bin/bench --site series-erp.com list-apps
+2023-10-04 00:24:56,495 INFO /usr/local/bin/bench --site series-erp.com install-app erpnext
+2023-10-04 00:25:20,991 INFO /usr/local/bin/bench get-app erpnext https://github.com/frappe/erpnext
+2023-10-04 00:25:24,784 LOG Installing erpnext
+2023-10-04 00:25:24,881 DEBUG cd /Users/kishandahya/repos/new-bench-name && /Users/kishandahya/repos/new-bench-name/env/bin/python -m pip install --quiet --upgrade -e /Users/kishandahya/repos/new-bench-name/apps/erpnext 
+2023-10-04 00:25:26,577 DEBUG cd /Users/kishandahya/repos/new-bench-name/apps/erpnext && yarn install
+2023-10-04 00:25:26,737 DEBUG bench build --app erpnext
+2023-10-04 00:25:26,837 INFO /usr/local/bin/bench build --app erpnext
+2023-10-04 00:25:28,609 DEBUG cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe:
+2023-10-04 00:25:28,789 WARNING cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe: executed with exit code 7
+2023-10-04 00:25:28,789 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2023-10-04 00:26:20,562 INFO /usr/local/bin/bench --site series-erp.com list-apps
+2023-10-04 00:26:39,315 INFO /usr/local/bin/bench --site series-erp.com reinstall
+2023-10-04 00:28:33,371 INFO /usr/local/bin/bench --site series-erp.com list-apps
+2023-10-04 00:28:40,232 INFO /usr/local/bin/bench --site series-erp.com install-app erpnext
+2023-10-04 00:31:17,878 INFO /usr/local/bin/bench --site series-erp.com list-apps
+2023-10-04 00:31:24,579 INFO /usr/local/bin/bench start
+2023-10-04 12:00:01,212 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-04 14:32:39,006 INFO /usr/local/bin/bench start
+2023-10-04 14:32:39,435 INFO /usr/local/bin/bench watch
+2023-10-04 14:32:39,448 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 14:32:39,462 INFO /usr/local/bin/bench schedule
+2023-10-04 14:32:39,467 INFO /usr/local/bin/bench worker
+2023-10-04 14:50:53,341 INFO /usr/local/bin/bench restart
+2023-10-04 14:50:53,570 DEBUG cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe:
+2023-10-04 14:50:53,742 WARNING cd /Users/kishandahya/repos/new-bench-name && supervisorctl restart frappe: executed with exit code 7
+2023-10-04 14:50:53,743 WARNING /usr/local/bin/bench restart executed with exit code 1
+2023-10-04 14:51:04,218 INFO /usr/local/bin/bench start
+2023-10-04 14:51:04,620 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 14:51:04,629 INFO /usr/local/bin/bench worker
+2023-10-04 14:51:04,630 INFO /usr/local/bin/bench watch
+2023-10-04 14:51:04,646 INFO /usr/local/bin/bench schedule
+2023-10-04 14:54:18,268 INFO /usr/local/bin/bench start
+2023-10-04 14:54:18,660 INFO /usr/local/bin/bench watch
+2023-10-04 14:54:18,662 INFO /usr/local/bin/bench schedule
+2023-10-04 14:54:18,673 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 14:54:18,677 INFO /usr/local/bin/bench worker
+2023-10-04 15:39:01,287 INFO /usr/local/bin/bench --site series-erp.com reinstall
+2023-10-04 15:39:06,582 INFO /usr/local/bin/bench start
+2023-10-04 15:39:06,992 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 15:39:07,010 INFO /usr/local/bin/bench watch
+2023-10-04 15:39:07,012 INFO /usr/local/bin/bench worker
+2023-10-04 15:39:07,021 INFO /usr/local/bin/bench schedule
+2023-10-04 15:40:21,107 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 15:40:24,893 INFO /usr/local/bin/bench build
+2023-10-04 15:40:34,665 INFO /usr/local/bin/bench start
+2023-10-04 15:40:35,058 INFO /usr/local/bin/bench schedule
+2023-10-04 15:40:35,064 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 15:40:35,071 INFO /usr/local/bin/bench watch
+2023-10-04 15:40:35,096 INFO /usr/local/bin/bench worker
+2023-10-04 15:43:09,462 INFO /usr/local/bin/bench build
+2023-10-04 15:43:19,692 INFO /usr/local/bin/bench start
+2023-10-04 15:43:20,119 INFO /usr/local/bin/bench watch
+2023-10-04 15:43:20,124 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 15:43:20,135 INFO /usr/local/bin/bench worker
+2023-10-04 15:43:20,137 INFO /usr/local/bin/bench schedule
+2023-10-04 15:45:51,372 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 15:46:09,291 INFO /usr/local/bin/bench build
+2023-10-04 15:46:19,528 INFO /usr/local/bin/bench start
+2023-10-04 15:46:19,931 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 15:46:19,947 INFO /usr/local/bin/bench worker
+2023-10-04 15:46:19,950 INFO /usr/local/bin/bench watch
+2023-10-04 15:46:19,954 INFO /usr/local/bin/bench schedule
+2023-10-04 15:48:13,513 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 15:48:16,862 INFO /usr/local/bin/bench build
+2023-10-04 15:48:27,389 INFO /usr/local/bin/bench start
+2023-10-04 15:48:27,803 INFO /usr/local/bin/bench watch
+2023-10-04 15:48:27,807 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 15:48:27,809 INFO /usr/local/bin/bench worker
+2023-10-04 15:48:27,815 INFO /usr/local/bin/bench schedule
+2023-10-04 15:49:45,502 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 15:49:48,336 INFO /usr/local/bin/bench build
+2023-10-04 15:50:00,318 INFO /usr/local/bin/bench start
+2023-10-04 15:50:00,707 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 15:50:00,725 INFO /usr/local/bin/bench watch
+2023-10-04 15:50:00,726 INFO /usr/local/bin/bench schedule
+2023-10-04 15:50:00,732 INFO /usr/local/bin/bench worker
+2023-10-04 15:51:07,914 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 15:51:10,086 INFO /usr/local/bin/bench build
+2023-10-04 15:51:33,709 INFO /usr/local/bin/bench build
+2023-10-04 15:51:43,715 INFO /usr/local/bin/bench start
+2023-10-04 15:51:44,095 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 15:51:44,119 INFO /usr/local/bin/bench watch
+2023-10-04 15:51:44,124 INFO /usr/local/bin/bench worker
+2023-10-04 15:51:44,131 INFO /usr/local/bin/bench schedule
+2023-10-04 15:54:09,286 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 15:54:11,524 INFO /usr/local/bin/bench build
+2023-10-04 15:54:20,606 INFO /usr/local/bin/bench start
+2023-10-04 15:54:21,010 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 15:54:21,027 INFO /usr/local/bin/bench schedule
+2023-10-04 15:54:21,034 INFO /usr/local/bin/bench watch
+2023-10-04 15:54:21,046 INFO /usr/local/bin/bench worker
+2023-10-04 15:58:30,814 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 15:58:33,335 INFO /usr/local/bin/bench build
+2023-10-04 15:58:43,283 INFO /usr/local/bin/bench start
+2023-10-04 15:58:43,698 INFO /usr/local/bin/bench watch
+2023-10-04 15:58:43,705 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 15:58:43,717 INFO /usr/local/bin/bench worker
+2023-10-04 15:58:43,731 INFO /usr/local/bin/bench schedule
+2023-10-04 16:05:02,044 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 16:05:04,274 INFO /usr/local/bin/bench build
+2023-10-04 16:05:13,441 INFO /usr/local/bin/bench start
+2023-10-04 16:05:13,862 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:05:13,863 INFO /usr/local/bin/bench watch
+2023-10-04 16:05:13,864 INFO /usr/local/bin/bench worker
+2023-10-04 16:05:13,883 INFO /usr/local/bin/bench schedule
+2023-10-04 16:06:40,169 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 16:06:42,294 INFO /usr/local/bin/bench build
+2023-10-04 16:06:54,256 INFO /usr/local/bin/bench start
+2023-10-04 16:06:54,648 INFO /usr/local/bin/bench schedule
+2023-10-04 16:06:54,648 INFO /usr/local/bin/bench watch
+2023-10-04 16:06:54,662 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:06:54,683 INFO /usr/local/bin/bench worker
+2023-10-04 16:11:18,260 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 16:11:20,897 INFO /usr/local/bin/bench build
+2023-10-04 16:11:32,175 INFO /usr/local/bin/bench build
+2023-10-04 16:11:42,723 INFO /usr/local/bin/bench start
+2023-10-04 16:11:43,131 INFO /usr/local/bin/bench watch
+2023-10-04 16:11:43,135 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:11:43,145 INFO /usr/local/bin/bench worker
+2023-10-04 16:11:43,152 INFO /usr/local/bin/bench schedule
+2023-10-04 16:12:29,179 INFO /usr/local/bin/bench --site series-erp.com migrate
+2023-10-04 16:12:34,120 INFO /usr/local/bin/bench start
+2023-10-04 16:12:34,505 INFO /usr/local/bin/bench schedule
+2023-10-04 16:12:34,507 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:12:34,525 INFO /usr/local/bin/bench watch
+2023-10-04 16:12:34,542 INFO /usr/local/bin/bench worker
+2023-10-04 16:12:42,311 INFO /usr/local/bin/bench --site series-erp.com migrate
+2023-10-04 16:12:53,493 INFO /usr/local/bin/bench build
+2023-10-04 16:13:03,592 INFO /usr/local/bin/bench build
+2023-10-04 16:13:13,511 INFO /usr/local/bin/bench start
+2023-10-04 16:13:13,948 INFO /usr/local/bin/bench watch
+2023-10-04 16:13:13,948 INFO /usr/local/bin/bench schedule
+2023-10-04 16:13:13,949 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:13:13,964 INFO /usr/local/bin/bench worker
+2023-10-04 16:15:04,167 INFO /usr/local/bin/bench build
+2023-10-04 16:15:13,550 INFO /usr/local/bin/bench start
+2023-10-04 16:15:13,962 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:15:13,982 INFO /usr/local/bin/bench schedule
+2023-10-04 16:15:13,986 INFO /usr/local/bin/bench worker
+2023-10-04 16:15:13,987 INFO /usr/local/bin/bench watch
+2023-10-04 16:16:39,734 INFO /usr/local/bin/bench start
+2023-10-04 16:16:40,135 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:16:40,159 INFO /usr/local/bin/bench schedule
+2023-10-04 16:16:40,161 INFO /usr/local/bin/bench watch
+2023-10-04 16:16:40,169 INFO /usr/local/bin/bench worker
+2023-10-04 16:20:07,382 INFO /usr/local/bin/bench --site series-erp.com migrate
+2023-10-04 16:20:16,059 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 16:20:19,051 INFO /usr/local/bin/bench build
+2023-10-04 16:20:29,626 INFO /usr/local/bin/bench start
+2023-10-04 16:20:30,037 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:20:30,057 INFO /usr/local/bin/bench watch
+2023-10-04 16:20:30,067 INFO /usr/local/bin/bench schedule
+2023-10-04 16:20:30,073 INFO /usr/local/bin/bench worker
+2023-10-04 16:26:08,963 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 16:26:11,829 INFO /usr/local/bin/bench build
+2023-10-04 16:26:22,203 INFO /usr/local/bin/bench start
+2023-10-04 16:26:22,611 INFO /usr/local/bin/bench worker
+2023-10-04 16:26:22,612 INFO /usr/local/bin/bench watch
+2023-10-04 16:26:22,613 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:26:22,630 INFO /usr/local/bin/bench schedule
+2023-10-04 16:27:12,767 INFO /usr/local/bin/bench build
+2023-10-04 16:27:21,578 INFO /usr/local/bin/bench start
+2023-10-04 16:27:21,986 INFO /usr/local/bin/bench watch
+2023-10-04 16:27:21,986 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:27:21,987 INFO /usr/local/bin/bench worker
+2023-10-04 16:27:21,998 INFO /usr/local/bin/bench schedule
+2023-10-04 16:32:11,630 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 16:32:14,060 INFO /usr/local/bin/bench build
+2023-10-04 16:32:23,622 INFO /usr/local/bin/bench start
+2023-10-04 16:32:24,044 INFO /usr/local/bin/bench watch
+2023-10-04 16:32:24,057 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:32:24,059 INFO /usr/local/bin/bench worker
+2023-10-04 16:32:24,067 INFO /usr/local/bin/bench schedule
+2023-10-04 16:36:08,136 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 16:36:13,181 INFO /usr/local/bin/bench start
+2023-10-04 16:36:13,675 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:36:13,701 INFO /usr/local/bin/bench schedule
+2023-10-04 16:36:13,720 INFO /usr/local/bin/bench watch
+2023-10-04 16:36:13,723 INFO /usr/local/bin/bench worker
+2023-10-04 16:36:18,617 INFO /usr/local/bin/bench --site series-erp.com migrate
+2023-10-04 16:37:08,303 INFO /usr/local/bin/bench build
+2023-10-04 16:39:23,617 INFO /usr/local/bin/bench --site series-erp.com migrate
+2023-10-04 16:39:26,871 INFO /usr/local/bin/bench start
+2023-10-04 16:39:27,283 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:39:27,286 INFO /usr/local/bin/bench schedule
+2023-10-04 16:39:27,304 INFO /usr/local/bin/bench watch
+2023-10-04 16:39:27,309 INFO /usr/local/bin/bench worker
+2023-10-04 16:39:34,929 INFO /usr/local/bin/bench --site series-erp.com migrate
+2023-10-04 16:43:11,242 INFO /usr/local/bin/bench build
+2023-10-04 16:44:11,535 INFO /usr/local/bin/bench start
+2023-10-04 16:44:11,953 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:44:11,957 INFO /usr/local/bin/bench watch
+2023-10-04 16:44:11,962 INFO /usr/local/bin/bench schedule
+2023-10-04 16:44:12,002 INFO /usr/local/bin/bench worker
+2023-10-04 16:50:16,972 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 16:50:20,772 INFO /usr/local/bin/bench build
+2023-10-04 16:50:30,370 INFO /usr/local/bin/bench start
+2023-10-04 16:50:30,797 INFO /usr/local/bin/bench schedule
+2023-10-04 16:50:30,798 INFO /usr/local/bin/bench watch
+2023-10-04 16:50:30,805 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:50:30,807 INFO /usr/local/bin/bench worker
+2023-10-04 16:51:20,226 INFO /usr/local/bin/bench --site series-erp.com clear-cache
+2023-10-04 16:51:22,641 INFO /usr/local/bin/bench build
+2023-10-04 16:51:34,732 INFO /usr/local/bin/bench start
+2023-10-04 16:51:35,134 INFO /usr/local/bin/bench serve --port 8000
+2023-10-04 16:51:35,145 INFO /usr/local/bin/bench watch
+2023-10-04 16:51:35,154 INFO /usr/local/bin/bench schedule
+2023-10-04 16:51:35,157 INFO /usr/local/bin/bench worker
+2023-10-04 18:04:41,729 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-05 12:00:00,862 INFO /usr/local/bin/bench --verbose --site all backup
+2023-10-05 12:00:00,864 WARNING Command not being executed in bench directory
+2023-10-05 14:17:00,048 INFO /usr/local/bin/bench start
+2023-10-05 14:17:00,049 WARNING Command not being executed in bench directory
+2023-10-05 14:17:00,432 INFO /usr/local/bin/bench serve --port 8000
+2023-10-05 14:17:00,432 INFO /usr/local/bin/bench watch
+2023-10-05 14:17:00,432 WARNING Command not being executed in bench directory
+2023-10-05 14:17:00,432 WARNING Command not being executed in bench directory
+2023-10-05 14:17:00,447 INFO /usr/local/bin/bench worker
+2023-10-05 14:17:00,448 WARNING Command not being executed in bench directory
+2023-10-05 14:17:56,685 INFO /usr/local/bin/bench --site series-erp.com list-apps
+2023-10-05 14:17:56,686 WARNING Command not being executed in bench directory
+2023-10-05 14:18:46,749 INFO /usr/local/bin/bench start
+2023-10-05 14:18:46,749 WARNING Command not being executed in bench directory
+2023-10-05 14:19:26,700 INFO /usr/local/bin/bench start
+2023-10-05 14:19:26,700 WARNING Command not being executed in bench directory
+2023-10-05 14:20:49,203 INFO /usr/local/bin/bench starrt
+2023-10-05 14:20:51,638 INFO /usr/local/bin/bench start
+2023-10-05 14:20:52,020 INFO /usr/local/bin/bench serve --port 8000
+2023-10-05 14:20:52,026 INFO /usr/local/bin/bench watch
+2023-10-05 14:20:52,055 INFO /usr/local/bin/bench worker
+2023-10-05 14:20:52,062 INFO /usr/local/bin/bench schedule
+2023-10-05 14:54:36,818 INFO /usr/local/bin/bench start
+2023-10-05 14:54:37,251 INFO /usr/local/bin/bench serve --port 8000
+2023-10-05 14:54:37,269 INFO /usr/local/bin/bench watch
+2023-10-05 14:54:37,274 INFO /usr/local/bin/bench worker
+2023-10-05 14:54:37,276 INFO /usr/local/bin/bench schedule
+2023-10-05 15:45:50,303 INFO /usr/local/bin/bench start
+2023-10-05 15:45:50,730 INFO /usr/local/bin/bench serve --port 8000
+2023-10-05 15:45:50,732 INFO /usr/local/bin/bench watch
+2023-10-05 15:45:50,735 INFO /usr/local/bin/bench schedule
+2023-10-05 15:45:50,753 INFO /usr/local/bin/bench worker
+2023-10-05 15:47:28,000 INFO /usr/local/bin/bench start
+2023-10-05 15:47:57,185 INFO /usr/local/bin/bench start
+2023-10-05 15:47:57,590 INFO /usr/local/bin/bench serve --port 8000
+2023-10-05 15:47:57,611 INFO /usr/local/bin/bench watch
+2023-10-05 15:47:57,611 INFO /usr/local/bin/bench worker
+2023-10-05 15:47:57,612 INFO /usr/local/bin/bench schedule
+2023-10-05 15:53:01,246 INFO /usr/local/bin/bench start
